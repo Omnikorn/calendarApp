@@ -72,8 +72,6 @@ body {
   
 
   /* my own styling */
-/* .col-8,
-  .col-2{
-    border: #000000 0.5px dashed;
-    /* height: auto; */
-  /* } */ 
+.row{
+  height: auto;
+}
