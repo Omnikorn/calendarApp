@@ -2,7 +2,8 @@
 var timeDisplayEl = $("#currentDay");
 var container=$("#container-fluid");
 var saveEl=$(".save_button");
-
+var eventEl=$(".event_input");
+var displayEl=$("display")
 
 
 // Functions used in the app
@@ -11,6 +12,9 @@ var saveEl=$(".save_button");
 function displayTime() {
     var rightNow = moment().format('MMM DD, YYYY [at] hh:mm:ss a');
     timeDisplayEl.text(rightNow);
+    var hour =moment().format("HH")
+    console.log(hour);
+    displayEvent();
   }
   setInterval(displayTime, 1000);
 
@@ -23,10 +27,9 @@ saveEl.on("click", function(event){
 
 })
 
-// input filed second attempt
-// $(document).ready(function(){
-//     $(".save_button").on("click", function(){
-//         var dataId = $(this).attr("data-id");
-//         alert("The data-id of clicked item is: " + dataId);
-//     });
-// });
+function displayEvent (){
+var eventText=eventEl.value.trim();
+displayEl.text(eventText);
+console.log(eventText);
+
+}
