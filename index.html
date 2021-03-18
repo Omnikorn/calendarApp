@@ -33,53 +33,55 @@
 			</p>
 			<p id="currentDay" class="lead">00:00:00</p>
 		</header>
-		<div class="container-fluid">
-			<!-- Timeblocks go here -->
-			<div class="row align-items-strech" data-id="0700">
-				<div class="col-2 border border-dark">
-					<h2>7:00</h2>
-				</div>
-				<div class="col-8 col-sx-4 border border-dark">
-                        <p><span id="display">this is where the events go once saved !</span></p>
-						<div class="form-group">
-							<label for="event_input"
-								></label>
-							<textarea
-								class="form-control"
-								id="event_input" 
-								rows="1"
-							></textarea>
-						</div>
-				</div>
-				<div class="col-2 border border-dark">
-					<button type="button" class="btn btn-dark" data-id="0700" id="save_button">
-						SAVE
-					</button>
-				</div>
-			</div>
-            <div class="row align-items-strech">
-				<section class="col-2 border border-dark">
-					<h2>8:00</h2>
-				</section>
-				<section class="col-8 col-sx-4 border border-dark">
-                        <p>this is where the events go once saved !</p>
-						<div class="form-group">
-							<label for="event_input"
-								></label>
-							<textarea
-								class="form-control"
-								id="event_input"
-								rows="1"
-							></textarea>
-						</div>
-				</section>
-				<section class="col-2 border border-dark">
-					<button type="button" class="btn btn-dark">
-						SAVE
-					</button>
-				</section>
-			</div>
-		</div>
+		<main>
+		    <div class="container-fluid">
+    			<!-- Timeblocks go here -->
+    			<div class="row align-items-strech" data-time="07">
+    				<div class="col-2 border border-dark">
+    					<h2>7:00</h2>
+    				</div>
+    				<div class="col-8 col-sx-4 border border-dark">
+                            <p><span id="display">this is where the events go once saved !</span></p>
+    						<div class="form-group">
+    							<label for="event_input"
+    								></label>
+    							<textarea
+    								class="form-control"
+    								id="event_input" 
+    								rows="1"
+    							></textarea>
+    						</div>
+    				</div>
+    				<div class="col-2 border border-dark">
+    					<button type="button" class="btn btn-dark" data-id="0700" id="save_button">
+    						SAVE
+    					</button>
+    				</div>
+    			</div>
+                <div class="row align-items-strech" data-time="08">
+    				<section class="col-2 border border-dark">
+    					<h2>8:00</h2>
+    				</section>
+    				<section class="col-8 col-sx-4 border border-dark">
+                            <p>this is where the events go once saved !</p>
+    						<div class="form-group">
+    							<label for="event_input"
+    								></label>
+    							<textarea
+    								class="form-control"
+    								id="event_input"
+    								rows="1"
+    							></textarea>
+    						</div>
+    				</section>
+    				<section class="col-2 border border-dark">
+    					<button type="button" class="btn btn-dark">
+    						SAVE
+    					</button>
+    				</section>
+    			</div>
+    		</div>
+		</main>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
