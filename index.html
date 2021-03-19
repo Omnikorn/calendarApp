@@ -31,60 +31,58 @@
 			<p class="lead">
 				A simple calendar app for scheduling your work day
 			</p>
-			<p id="currentDay" class="lead">00:00:00</p>
+			<p id="currentDay" class="lead"></p>
 		</header>
-		<main>
-		    <div class="container-fluid">
-    			<!-- Timeblocks go here -->
-    			<div class="row align-items-strech" data-time="07">
-    				<div class="col-2 border border-dark">
-    					<h2>7:00</h2>
-    				</div>
-    				<div class="col-8 col-sx-4 border border-dark">
-                            <p><span id="display">this is where the events go once saved !</span></p>
-    						<div class="form-group">
-    							<label for="event_input"
-    								></label>
-    							<textarea
-    								class="form-control"
-    								id="event_input" 
-    								rows="1"
-    							></textarea>
-    						</div>
-    				</div>
-    				<div class="col-2 border border-dark">
-    					<button type="button" class="btn btn-dark" data-id="0700" id="save_button">
-    						SAVE
-    					</button>
-    				</div>
-    			</div>
-                <div class="row align-items-strech" data-time="08">
-    				<section class="col-2 border border-dark">
-    					<h2>8:00</h2>
-    				</section>
-    				<section class="col-8 col-sx-4 border border-dark">
-                            <p>this is where the events go once saved !</p>
-    						<div class="form-group">
-    							<label for="event_input"
-    								></label>
-    							<textarea
-    								class="form-control"
-    								id="event_input"
-    								rows="1"
-    							></textarea>
-    						</div>
-    				</section>
-    				<section class="col-2 border border-dark">
-    					<button type="button" class="btn btn-dark">
-    						SAVE
-    					</button>
-    				</section>
-    			</div>
-    		</div>
-		</main>
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<div class="container">
+			<!-- Timeblocks go here -->
+            <div class="row time-block"id="9">
+                <h2 class="col-2 hour">9:00</h2>
+                <textarea class="col-8 description"></textarea>
+                <button class="saveBtn btn-dark">Save</button>
+            </div>
+            <div class="row time-block"id="10">
+                <h2 class="col-2 hour">10:00</h2>
+                <textarea class="col-8 description"></textarea>
+                <button class="saveBtn btn-dark">Save</button>
+            </div>
+            <div class="row time-block"id="11">
+                <h2 class="col-2 hour">11:00</h2>
+                <textarea class="col-8 description"></textarea>
+                <button class="saveBtn btn-dark">Save</button>
+            </div>
+            <div class="row time-block"id="12">
+                <h2 class="col-2 hour">12:00</h2>
+                <textarea class="col-8 description"></textarea>
+                <button class="saveBtn btn-dark">Save</button>
+            </div>
+            <div class="row time-block"id="13">
+                <h2 class="col-2 hour">13:00</h2>
+                <textarea class="col-8 description"></textarea>
+                <button class="saveBtn btn-dark">Save</button>
+            </div>
+            <div class="row time-block"id="14">
+                <h2 class="col-2 hour">14:00</h2>
+                <textarea class="col-8 description"></textarea>
+                <button class="saveBtn btn-dark">Save</button>
+            </div>
+            <div class="row time-block"id="15">
+                <h2 class="col-2 hour">15:00</h2>
+                <textarea class="col-8 description"></textarea>
+                <button class="saveBtn btn-dark">Save</button>
+            </div>
+            <div class="row time-block"id="16">
+                <h2 class="col-2 hour">16:00</h2>
+                <textarea class="col-8 description"></textarea>
+                <button class="saveBtn btn-dark">Save</button>
+            </div>
+            <div class="row time-block"id="17">
+                <h2 class="col-2 hour">17:00</h2>
+                <textarea class="col-8 description"></textarea>
+                <button class="saveBtn btn-dark">Save</button>
+            </div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-		<script src="assests/javascript/script.js"></script>
+		<script src="/calendarApp/assests/javascript/script.js"></script>
 	</body>
 </html>
