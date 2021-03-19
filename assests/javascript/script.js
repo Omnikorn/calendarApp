@@ -1,5 +1,5 @@
 var timeDisplayEl = $("#currentDay")
-var timeBlockEl = document.querySelectorAll(".time-block")
+var timeBlockEl = document.querySelectorAll(".row")
 // var eventEl9 = $("#event_input9")
 // var eventEl10 = $("#event_input10")
 // var eventEl11 = $("#event_input11")
@@ -8,6 +8,7 @@ var timeBlockEl = document.querySelectorAll(".time-block")
 // var saveEl11 = $("#save_button11")
 
 
+// Button function
 $(".saveBtn").on("click", function () {
 	var timeSelected = $(this).parent().attr("id"); 
     var entry = $(this).siblings(".description").val();
@@ -16,6 +17,8 @@ $(".saveBtn").on("click", function () {
     localStorage.setItem(timeSelected, entry);
 })
 
+
+// screen write function
 $("#9 .description").val(localStorage.getItem("9"));
 $("#10 .description").val(localStorage.getItem("10"));
 $("#11 .description").val(localStorage.getItem("11"));
@@ -26,8 +29,8 @@ $("#15 .description").val(localStorage.getItem("15"));
 $("#16 .description").val(localStorage.getItem("16"));
 $("#17 .description").val(localStorage.getItem("17"));
 
-// functions
 
+// time display  and color change function 
 function displayTime() {
     
 	var rightNow = moment().format(
@@ -37,8 +40,8 @@ function displayTime() {
 	var hour = moment().format("H")
 	console.log("current hour::" + hour)
 	for (i = 0; i < timeBlockEl.length; i++) {
-		// console.log(timeBlockEl[i]);
-		var backEL = parseInt(timeBlockEl[i].attr('id'))
+		console.log(timeBlockEl[i]);
+		var backEL = parseInt(timeBlockEl[i].getAttribute("id"))
 		console.log(typeof backEL)
 		if (backEL < hour) {
 			timeBlockEl[i].setAttribute(
@@ -59,19 +62,17 @@ function displayTime() {
 		}
 	}
 
-    $(".time-block").each(function(){
-        var entryHour = parseInt($(this).attr('id'));
-        if(entryHour < hour){
-            $(this).addClass("past")
-        } else if (entryHour === hour){
+    // $(".time-block").each(function(){
+    //     var entryHour = parseInt($(this).attr('id'));
+    //     if(entryHour < hour){
+    //         $(this).addClass("past")
+    //     } else if (entryHour === hour){
 
-        }else {
+    //     }else {
 
-        }
-    })
-	// write9();
-	// write10();
-	// write11();
+    //     }
+    // })
+
 }
 
 setInterval(displayTime, 1000)
