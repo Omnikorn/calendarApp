@@ -57,16 +57,6 @@ function displayTime() {
 		}
 	}
 
-    // $(".time-block").each(function(){
-    //     var entryHour = parseInt($(this).attr('id'));
-    //     if(entryHour < hour){
-    //         $(this).addClass("past")
-    //     } else if (entryHour === hour){
-
-    //     }else {
-
-    //     }
-    // })
 
 }
 
