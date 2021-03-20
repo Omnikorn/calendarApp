@@ -1,7 +1,7 @@
 
 This is a simple calendar/scheduling app build using a combination of bootstrap, jquery, momentJS and javascript. 
 
-![calendar_app](\assests\pics\cal1.png)
+![image](https://user-images.githubusercontent.com/75341811/111874995-643d4e00-898f-11eb-8da1-289f1cabfc7c.png)
 
 As seen in the attached image the user is presented with a simple screen with a number of rows representing the working day in hour intervals. 
 The middle section of each row represents the area where the user inputs the event for that hour of the day and once the save button is clicked these will remain there even after a page refresh. 
